@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(209, 209, 209);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.EventsHeader {
+  width: 100vw;
+  filter: grayscale(100);
+  z-index: -1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.getStarted {
+  background-color: red;
   color: white;
+  width: 25vw;
+  height: 50px;
+  border-radius: 0.8rem;
+  z-index: 1;
+  position: absolute;
+  left: 550px;
+  top: 450px;
+  padding-bottom: 10px;
+}
+.ArtContainer {
+  padding: 10px;
+  margin: auto;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.art {
+  width: 30vw;
+  padding: 10px;
+  margin: auto;
+  margin-left: 10px;
+}
+.Paragraph {
+  text-align: center;
+  padding: 25px;
+  margin: 50px;
+  color: rgb(75, 75, 75);
+}
+.colors {
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.RedDiv {
+  width: 50vw;
+  height: 200px;
+  background-color: red;
+}
+.logo {
+  width: 150px;
+  margin-top: 80px;
+  margin-left: 150px;
+}
+.black {
+  background-color: black;
+  padding: 50px;
+  width: 50vw;
+}
+.yellow {
+  background-color: yellow;
+  padding: 50px;
+  width: 50vw;
+}
+.white {
+  background-color: white;
+  padding: 50px;
+  width: 50vw;
+}
+.whiteNyellow {
+  display: flex;
+  width: 57vw;
+}
+.emailForm {
+  width: 80vw;
+  padding: 15px;
+  margin-top: 50px;
+}
+.form {
+  margin-left: 500px;
+}
+.email {
+  margin: auto;
+  height: 30px;
+  width: 25vw;
+}
+input {
+  padding-left: 10px;
+  font-size: 15px;
+  margin: auto;
+}
+.subscribe {
+  /* margin-top: 10px; */
+  background-color: red;
+  color: white;
+  width: 20vw;
+  height: 50px;
+  border-radius: 0.8rem;
+  margin-left: 50px;
+}
+.starth3 {
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 65px;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.subscribeh3 {
+  padding-top: 10px;
+  margin-top: 15px;
+  margin-left: 35px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 480px) {
+  .Paragraph {
+    padding: 50px;
+    margin-left: 150px;
+    width: 400px;
+    font-size: 25px;
   }
-  to {
-    transform: rotate(360deg);
+  .EventsHeader {
+    width: 1000px;
+  }
+  .art {
+    width: 90vw;
+    margin-left: 170px;
+  }
+  .getStarted {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    width: 400px;
+  }
+  .starth3 {
+    font-size: 30px;
+    padding: 10px;
+  }
+  .colors {
+    display: flex;
+    flex-direction: column;
+  }
+  .RedDiv {
+    width: 1000vw;
+    height: 200px;
+    background-color: red;
+    margin-left: 10px;
+  }
+  .black {
+    width: 1000vw;
+  }
+  .whiteNyellow {
+    display: flex;
+    flex-direction: row;
+    width: 1000vw;
+  }
+  .white {
+    width: 500px;
+  }
+
+  .logo {
+    width: 250px;
+    margin-top: 80px;
+    margin-left: 270px;
+  }
+  .form {
+    margin-left: 100px;
+    margin-bottom: 50px;
+  }
+  .email {
+    width: 450px;
+    height: 50px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  .subscribe {
+    margin-top: 50px;
+    background-color: red;
+    color: white;
+    width: 90vw;
+    height: 80px;
+    margin-left: 80px;
+    border-radius: 0.8rem;
+  }
+  .subscribeh3 {
+    font-size: 50px;
   }
 }
