@@ -2,6 +2,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(209, 209, 209);
 }
+h1 {
+  margin-left: 550px;
+}
 .EventsHeader {
   width: 100vw;
   filter: grayscale(100);

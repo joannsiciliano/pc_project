@@ -1,5 +1,6 @@
 import "./App.css";
 import EventsHeader from "./images/events_header.jpg";
+import React, { useEffect, useState } from "react";
 import art1 from "./images/ART1.jpg";
 import art2 from "./images/ART2.jpg";
 import art3 from "./images/ART3.jpg";
@@ -9,20 +10,23 @@ import art6 from "./images/ART6.jpg";
 import pcLogo from "./images/pclogo.png";
 
 function App() {
-  const dynamicText = () => {
+  const [displayText, setDisplayText] = useState("");
+  useEffect(() => {
     const strings = [
       "Hello World",
       "Production Club",
-      "Los Angeles CA",
+      "Los Angles, CA",
       "The Sunshine State",
     ];
-    let waitTime = 3000;
-    strings.forEach((string) => {
-      setTimeout(() => (strings.textContent = string), waitTime);
-      waitTime += 3000;
-    });
-    return strings;
-  };
+    let index = 0;
+    const timerId = setInterval(() => {
+      setDisplayText(strings[index]);
+      index += 1;
+      if (index === strings.length) {
+        clearInterval(timerId);
+      }
+    }, 3000);
+  }, []);
 
   return (
     <div className="App">
@@ -32,7 +36,7 @@ function App() {
           <h3 className="starth3">GET STARTED</h3>
         </div>
       </section>
-      <h1>{dynamicText()}</h1>
+      <h1>{displayText}</h1>
       <div className="scroll"></div>
       <section className="ArtSection">
         <img src={art1} className="art" alt="productionclub" />
